@@ -1,0 +1,39 @@
+{
+  "name": "cherrypicker-action",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cherrypicker will help us automatically cherry-pick PR changes to another branch and create PRs automatically",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "test": "tsc --noEmit && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x5459/cherrypicker-action.git"
+  },
+  "author": "0x5459",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0x5459/cherrypicker-action/issues"
+  },
+  "homepage": "https://github.com/0x5459/cherrypicker-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^5.1.1",
+    "download": "^8.0.0",
+    "lookpath": "^1.2.2",
+    "neverthrow": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-neverthrow": "^1.1.4",
+    "@jest/globals": "^29.3.1",
+    "@types/download": "^8.0.1",
+    "prettier": "2.8.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
+  }
+}

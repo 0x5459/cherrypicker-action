@@ -1,0 +1,12 @@
+name: "Cherrypicker"
+description: "Cherrypicker will help us automatically cherry-pick PR changes to another branch and create PRs automatically."
+author: "0x5459"
+inputs:
+  label-prefix:
+    description: "The prefix of the label that triggers cherry-pick, default is cherrypick/"
+    required: false
+    default: "cherrypick/"
+
+runs:
+  using: "node16"
+  main: "dist/main.js"
