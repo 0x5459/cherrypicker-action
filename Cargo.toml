@@ -1,0 +1,27 @@
+[package]
+name = "cherrypicker-action"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["components/git", "components/logit", "components/actions"]
+
+[dependencies]
+octocrab = "0.17"
+git = { path = "components/git" }
+logit = { path = "components/logit" }
+actions = { path = "components/actions" }
+anyhow = "1"
+tokio = { version = "1.23", features = ["rt-multi-thread", "macros", "time"] }
+lazy_static = "1"
+futures = "0.3"
+regex = "1.7"
+once_cell = "1.16"
+itertools = "0.10"
+reqwest = "0.11"
+serde = { version = "1", features = ["derive"] }
+random_color = "0.6.1"
+tracing = "0.1"
+
+[dev-dependencies]
+pretty_assertions = "1.3"

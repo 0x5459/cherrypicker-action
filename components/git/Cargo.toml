@@ -1,0 +1,12 @@
+[package]
+name = "git"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing = "0.1"
+tokio = { version = "1.23", features = ["process", "fs"] }
+anyhow = "1"
+thiserror = "1"
+logit = { path = "../logit" }
+futures = "0.3"
